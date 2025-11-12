@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Django SvelteKit Starter - Home</title>
+	<title>UFC Fantasy - Home</title>
 </svelte:head>
 
 <div class="min-h-screen">
@@ -12,10 +12,10 @@
 		<div class="px-4 py-16 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-4xl text-center">
 				<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-					Django-SvelteKit
+					UFC Fantasy
 				</h1>
 				<p class="mt-4 text-xl text-gray-600">
-					A modern full-stack template for AI-powered development
+					A UFC Fantasy application
 				</p>
 				<div class="mt-8 flex justify-center">
 					<a
@@ -86,7 +86,7 @@
 				<div class="mx-auto max-w-2xl">
 					<div class="flex items-center justify-center">
 						<h4 class="mb-4 ml-4 text-center text-xl font-medium text-gray-900">
-							Django-SvelteKit feature specs that AI coders can implement for you
+							UFC Fantasy feature specs that AI coders can implement for you
 						</h4>
 					</div>
 				</div>

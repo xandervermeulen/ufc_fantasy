@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-	<title>Artifacts - Django SvelteKit Starter</title>
+	<title>Artifacts - UFC Fantasy</title>
 </svelte:head>
 
 <div class="min-h-screen bg-gray-50">
@@ -50,7 +50,7 @@
 				<div class="text-center">
 					<h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">Artifacts</h1>
 					<p class="mt-4 text-xl text-gray-600">
-						AI Coders can add these to your <span class="text-primary-600">Django x SvelteKit</span>
+						AI Coders can add these to your <span class="text-primary-600">UFC Fantasy</span>
 						project
 					</p>
 

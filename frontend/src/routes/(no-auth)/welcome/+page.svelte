@@ -15,10 +15,10 @@
 		<!-- Header -->
 		<div class="mb-24 py-8 text-center">
 			<a href="/welcome" class="mb-8 inline-block">
-				<img class="h-12 w-auto" src="/icon.png" alt="Django-SvelteKit Starter" />
+				<img class="h-12 w-auto" src="/icon.png" alt="UFC Fantasy Starter" />
 			</a>
 			<h1 class="mb-6 text-4xl font-bold text-slate-900 md:text-6xl">
-				Django-SvelteKit
+				UFC Fantasy
 				<span
 					class="bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent"
 				>

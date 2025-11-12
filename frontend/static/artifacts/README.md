@@ -1,6 +1,6 @@
 # Artifacts Directory
 
-This directory contains artifact specifications - detailed instructions that AI coding assistants can use to build features for your Django-SvelteKit application.
+This directory contains artifact specifications - detailed instructions that AI coding assistants can use to build features for your UFC Fantasy application.
 
 ## What is an Artifact?
 

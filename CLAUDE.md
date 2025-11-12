@@ -15,7 +15,7 @@ Key areas covered:
 
 ## Architecture Overview
 
-This is a Django-SvelteKit monorepo with production-ready infrastructure:
+This is a UFC Fantasy monorepo with production-ready infrastructure:
 - **Backend**: Django 4.2+ with DRF, JWT auth, Celery task queue
 - **Frontend**: SvelteKit 2+ with TypeScript and type-safe API client
 - **Infrastructure**: Docker Compose, PostgreSQL, Redis, S3 storage
@@ -67,7 +67,7 @@ The frontend uses **automatic OpenAPI type generation**:
 
 ```
 ├── backend/     # Django API with Celery
-├── frontend/    # SvelteKit app with Tailwind
+├── frontend/    # SvelteKit app for UFC Fantasy
 └── MONOREPO-GUIDE.md    # Detailed setup instructions
 ```
 

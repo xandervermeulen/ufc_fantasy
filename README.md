@@ -1,8 +1,8 @@
-![Django-SvelteKit Starter Banner](banner.png)
+![UFC Fantasy Banner](ufc-banner.jpeg)
 
-# Django-SvelteKit Starter
+# UFC Fantasy
 
-A production-ready monorepo template for building full-stack applications with Django (backend) and SvelteKit (frontend).
+A production-ready monorepo template for building full-stack applications with Django (backend) and SvelteKit (frontend) for UFC Fantasy.
 
 ## 🚀 Features
 
