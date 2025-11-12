@@ -4,8 +4,8 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_DB: ufc_fantasy_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: ufc_fantasy
+      POSTGRES_PASSWORD: ufc_fantasy
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -31,7 +31,7 @@ services:
       - db
       - redis
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@db:5432/ufc_fantasy_db
+      DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@db:5432/ufc_fantasy_db
       REDIS_URL: redis://redis:6379/0
       DEBUG: "1"
 
@@ -47,7 +47,7 @@ services:
       - db
       - redis
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@db:5432/ufc_fantasy_db
+      DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@db:5432/ufc_fantasy_db
       REDIS_URL: redis://redis:6379/0
       DEBUG: "1"
 
@@ -63,7 +63,7 @@ services:
       - db
       - redis
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@db:5432/ufc_fantasy_db
+      DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@db:5432/ufc_fantasy_db
       REDIS_URL: redis://redis:6379/0
       DEBUG: "1"
 
@@ -80,7 +80,7 @@ services:
     depends_on:
       - redis
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@db:5432/ufc_fantasy_db
+      DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@db:5432/ufc_fantasy_db
       REDIS_URL: redis://redis:6379/0
       DEBUG: "1"
 

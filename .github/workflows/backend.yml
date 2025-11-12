@@ -53,16 +53,16 @@ jobs:
     - name: Run Django system check
       run: poetry run python manage.py check --deploy --fail-level WARNING
       env:
-        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
+        DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/test_db
 
     - name: Run migrations check
       run: poetry run python manage.py makemigrations --check --dry-run
       env:
-        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
+        DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/test_db
 
     - name: Run tests
       env:
-        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
+        DATABASE_URL: postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/test_db
       run: |
         poetry run pytest --cov --cov-report=xml
 

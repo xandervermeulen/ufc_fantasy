@@ -106,7 +106,7 @@ from drf_spectacular.utils import extend_schema_view, extend_schema
 class VacancyViewSet(ModelViewSet):
     queryset = Vacancy.objects.all()
     serializer_class = VacancySerializer
-    
+
     @extend_schema(operation_id="searchVacancies")
     @action(detail=False, methods=['post'])
     def search(self, request):
@@ -179,7 +179,7 @@ export const vacancyQueries = {
             return data;
         }
     }),
-    
+
     detail: (id: string) => createQuery({
         queryKey: ['vacancy', id],
         queryFn: async () => {
@@ -260,7 +260,7 @@ volumes:
 # backend/.env
 DEBUG=True
 SECRET_KEY=your-secret-key
-DATABASE_URL=postgresql://postgres:postgres@localhost:5433/project_db
+DATABASE_URL=postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/ufc_fantasy_db
 REDIS_URL=redis://localhost:6380/0
 OPENAI_API_KEY=your-openai-key
 

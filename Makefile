@@ -75,7 +75,7 @@ test:
 		echo "✅ PostgreSQL is already running!"; \
 	fi
 	@echo "🧪 Running tests..."
-	cd backend && DATABASE_URL=postgresql://postgres:postgres@localhost:5432/ufc_fantasy_db poetry run pytest
+	cd backend && DATABASE_URL=postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/ufc_fantasy_db poetry run pytest
 
 format:
 	cd backend && poetry run ruff check . --fix
@@ -113,12 +113,12 @@ reset-db:
 		sleep 2; \
 	done
 	@echo "🔄 Running database migrations..."
-	cd backend && DATABASE_URL=postgresql://postgres:postgres@localhost:5432/ufc_fantasy_db poetry run python manage.py migrate
+	cd backend && DATABASE_URL=postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/ufc_fantasy_db poetry run python manage.py migrate
 	@echo "✅ Database reset complete!"
 
 fresh-start: reset-db
 	@echo "🔄 Setting up development environment..."
-	cd backend && DATABASE_URL=postgresql://postgres:postgres@localhost:5432/ufc_fantasy_db poetry run python manage.py setup_dev_env
+	cd backend && DATABASE_URL=postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/ufc_fantasy_db poetry run python manage.py setup_dev_env
 	@echo "✅ Fresh development environment ready!"
 	@echo ""
 	@echo "🎉 You can now login with:"
@@ -127,7 +127,7 @@ fresh-start: reset-db
 
 django-check:
 	@echo "🔍 Running Django system checks..."
-	cd backend && DATABASE_URL=postgresql://postgres:postgres@localhost:5432/ufc_fantasy_db poetry run python manage.py check --deploy --fail-level WARNING
+	cd backend && DATABASE_URL=postgresql://ufc_fantasy:ufc_fantasy@localhost:5432/ufc_fantasy_db poetry run python manage.py check --deploy --fail-level WARNING
 	@echo "✅ Django checks passed!"
 
 update-handbook:
