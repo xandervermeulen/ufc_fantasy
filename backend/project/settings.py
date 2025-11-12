@@ -125,6 +125,7 @@ INSTALLED_APPS = [
     # Needs to go before other apps.
     "project.accounts.apps.AccountsConfig",
     "project.core.apps.CoreConfig",
+    "project.ufc.apps.UfcConfig",
     "project.apps.CustomAdminConfig",
     "corsheaders",
     "debug_toolbar",
